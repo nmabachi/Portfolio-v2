@@ -15,6 +15,12 @@ body {
 hr {
   width: 70%;
 }
+
+p {
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
 header {
   height: 100%;
   background-image: url(../img/header-bg.jpg);
@@ -41,8 +47,12 @@ header {
   background-color: #555 !important;
 }
 
-.navbar {
-  background-color: #E9E8E6;
+.navbar-brand {
+  padding-top: 10px !important;
+}
+
+.navbar.scrolled {
+    background: rgba(233, 232, 230, 0.78); //NON-IE
 }
 
 .navbar-nav li {
@@ -62,11 +72,15 @@ header {
 }
 
 @media screen and (min-width: 767px) {
-.navbar-nav li a:hover, .navbar-nav li a:focus {
-  background-color: transparent !important;
-  text-decoration: none;
-  border-bottom: 2px solid #555;
-}}
+  .navbar-nav li a:hover {
+    background-color: transparent !important;
+    text-decoration: none;
+    border-bottom: 2px solid #555;
+  }
+  .navbar-nav li a:focus {
+    background-color: transparent !important;
+  }
+}
 
 .landing-title {
   margin: 0;
@@ -82,12 +96,8 @@ header {
   font-weight: bold;
 }
 
-#projects {
-  margin: 50px 0;
-}
-
-#projects p {
-  margin-bottom: 30px;
+#projects, #about, #contact {
+  margin: 70px 0;
 }
 
 .project-icon {
@@ -97,4 +107,9 @@ header {
 
 .project:hover .project-icon{
   height: 100px;
+}
+
+#contact a, #contact a:hover {
+  text-decoration: none;
+  margin: 0 15px;
 }
