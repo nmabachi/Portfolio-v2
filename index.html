@@ -9,27 +9,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="row">
-          <img src="./resources/img/logo.svg" alt="Logo" class="logo" />
-          <ul class="header-nav">
-            <li>
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header id="home">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="./resources/img/logo.svg" alt="Logo" class="logo" />
+            </a>
+          </div>
 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#home" class="nav-link">HOME</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">ABOUT</a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">CONTACT</a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
       <div class="header-text">
         <h1 class="landing-title"><em>"Less is more."</em></h1>
@@ -38,15 +52,36 @@
     </header>
 
     <section id="projects">
+      <div class="row text-center">
+        <h2>PROJECTS</h2>
+        <hr />
+      </div>
       <div class="row">
-        <div class="col-sm-6">
-          ASDF
+        <div class="col-sm-4 text-center project">
+          <img src="./resources/img/tent.svg" alt="Tent" class="project-icon"/>
+          <h3>YelpCamp</h3>
+          <p>
+            Simple Yelp clone for reviewing campsites. Users can create new camps, leave commentary on existing sites and edit or delete their own submissions. Implements Node.js/Express, Mongoose/MongoDB, Passport.js and Bootstrap.
+          </p>
         </div>
-        <div class="col-sm-6">
-          ASDF
+        <div class="col-sm-4 text-center project">
+          <img src="./resources/img/blog.svg" alt="Tent" class="project-icon"/>
+          <h3>ReactReduxBlog</h3>
+          <p>
+            Single-page application written in React with Redux for application state management. Implements React, Redux, react-router, redux-form, redux-promise and axios. Backend API is currently handled by reduxblog.herokuapp.com.
+          </p>
+        </div>
+        <div class="col-sm-4 text-center project">
+          <img src="./resources/img/cloud.svg" alt="Tent" class="project-icon"/>
+          <h3>ReactReduxWeather</h3>
+          <p>
+            Simple weather application written in React while using Redux for application state management. Implements React, Redux, react-sparklines, redux-promise and Bootstrap. Uses both openWeatherMap and the Google Maps API.
+          </p>
         </div>
       </div>
     </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./resources/js/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
